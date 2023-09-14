@@ -53,4 +53,15 @@ public class PlayerBehaviour : MonoBehaviour
         }
         }
     }
+
+private void OnTriggerEnter2D(Collider2D outroobjeto) 
+{
+    if(outroobjeto.gameObject.tag=="Coin")
+    {
+        Destroy(outroobjeto.gameObject);
+
+    }
+}
+
+
 }
